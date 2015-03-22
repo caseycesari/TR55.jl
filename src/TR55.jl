@@ -6,7 +6,7 @@ module TR55
 function q(s, p)
     Q = (p - (0.2 * s))^2 / (p + (0.8 * s))
 
-    return Q
+    return round(Q, 2)
 end
 
 # Calculates the potential maximum retention
@@ -15,7 +15,7 @@ end
 function s(cn)
     S = (1000 / cn) - 10
 
-    return S
+    return round(S, 2)
 end
 
 end # module
